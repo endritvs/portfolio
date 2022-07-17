@@ -1,0 +1,356 @@
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .center-100{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+.img{
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    object-fit: contain;
+}
+
+.text-justify{
+    text-align: justify;
+    font-size: 1.7em;
+}
+.text-center{
+  text-align: center;
+}
+.btn{
+    margin-top: 20px;
+    color:#1f2937;
+    font-weight:bolder;
+    padding: 15px;
+    background-color:#fff;
+
+}
+.home{
+  height:100vh;
+}
+.font-size{
+    font-size:15px;
+}
+.mb{
+    margin-bottom:15px;
+}
+.mt{
+    margin-top: 25px;
+}
+.fs-1{
+    font-size: 18px;
+}
+.fontS{
+    font-size:10px;
+    font-style: italic;
+}
+.text-white{
+    color:#fff;
+}
+.text{
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: monospace;
+}
+.text-vertical{
+    writing-mode: vertical-rl;
+    margin-left: 10px;
+  }
+  .text-vertical-r{
+    writing-mode: vertical-rl;
+    margin-left: 10px;
+    float: right !important;
+  }
+.flex{
+    display: flex;
+    
+}
+
+/*  */
+  
+  .typing-demo {
+    width: 28ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+.logoEP{
+  float: right;
+    width: 150px;
+    margin-right: 150px;
+    object-fit: cover;
+}
+.description-work{
+  float:right;
+  text-align: justify;
+  font-size: 1.4rem;
+}
+
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  .skills{
+    margin-left:65px;
+  }
+
+  .flex-container {
+    display: flex;
+    margin-top: 100px;
+  }
+  
+  .flex-containerPro > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+  .flex-containerPro {
+    display: flex;
+    margin-top: 100px;
+  }
+  .flex-container > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .epDiv{
+    width: 40%;
+    border-right: 2px solid #fff;
+  }
+  .probitD{
+    width: 40%;
+    border-left: 2px solid #fff;
+  }
+.yellowMe{
+  color: #FEB139;
+   font-family: monospace;
+}
+.icons{
+  max-width: 50px; 
+  position: relative; 
+  bottom: 280px;
+}
+.fa-icons{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+
+
+
+  @media only screen and (max-width: 600px) {
+    .skills{
+      margin-left:45px;
+      padding-right:30px;
+    }
+    .icons{
+      max-width:50px;
+    }
+    .icons a{
+      display:flex;
+    position:relative;
+    left:230px;
+    top:-1px;
+    margin-right:10px;
+    background-color:#FEB139;
+    }
+  
+    .a-icon-google:hover{
+      background-color:#c71610;
+    }
+
+    .a-icon-linkedin:hover{
+      background-color:#0072b1;
+    }
+  
+    .a-icon-git:hover{
+      background-color:#0c0c0c;
+    }
+    .text-justify{
+        text-align: justify;
+        width: auto;
+        margin: -4px;
+        padding: 10px;
+    }
+    .center{
+        margin-top:25px;
+       
+    }
+  
+    /* .mb{margin-bottom:0px !important}  */
+    .typing-size {
+      font-size: 1.85em;
+    }
+ 
+
+    .typing-demo {
+        width: 28ch;
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 1.85em;
+      }
+      .typing {
+        width:40ch;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: monospace;
+        font-size: 1.65em;
+     
+      }
+      .mob{
+        margin-top: 30px;
+      }
+    
+      
+      @keyframes typing {
+        from {
+          width: 0
+        }
+      }
+          
+      @keyframes blink {
+        50% {
+          border-color: transparent
+        }
+      }
+      
+      .text-vertical-r{
+        display: none;
+      }
+      .flex-container {
+        flex-wrap: wrap;
+    }
+    .epDiv {
+        width: 0;
+       border:none;
+    }
+    .logoEP {
+        float:none;
+        width: 150px;
+        margin-right: 150;
+        
+    }
+    .flex-container > div {
+      
+        padding: 20px;
+        font-size: 30px;
+    }
+    .probitD{
+      border:none;
+      
+    }
+    .flex-containerPro{
+      flex-wrap: wrap-reverse;
+    }
+    .flex-containerPro > div {
+      
+      padding: 20px;
+      font-size: 30px;
+  }
+  }
+  .card {
+    color: black;
+    padding: 1rem;
+    height: 4rem;
+    text-align: center;
+  }
+  .card:nth-child(1){
+    color:green;
+  }
+  .card:nth-child(2){
+    color:red;
+  }
+  .card:nth-child(3){
+    color:rgb(89, 89, 202);
+  }
+  .card:nth-child(4){
+    color:rgb(59, 59, 181);
+  }
+  .card:nth-child(5){
+    color:rgb(59, 180, 59);
+  }
+  .card:nth-child(6){
+    color:gray;
+  }
+  .skill-icons{
+    font-size: 50px;
+    border:1px solid #fff;
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 100%;
+    
+  }
+  
+  .cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+  }
+  
+  /* Screen larger than 600px? 2 column */
+  @media (max-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .card-project {
+    background-color: #fff;
+    color: black;
+    margin-top: 1rem;
+    padding: 1rem;
+    height: 5rem;
+    text-align: center;
+    border-radius: 10px;
+  }
+.text-blue{
+  color:#0072b1;
+  background-color:#fff;
+}
+.search{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+button{
+  background-color:#1f2937;
+  color:#fff;
+  border:1px solid #fff;
+  width: 100px;
+  
+  padding:5px;
+  border-radius: 10px;
+}
+button:hover{
+  background-color:#353c458a
+}
+.connect-me{
+  font-size:70px;
+  text-align:center;
+}
