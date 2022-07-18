@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "../style/navbar.css";
+import { Link } from "react-scroll";
+import "../assets/style/navbar.css";
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -21,7 +22,6 @@ export default function Navbar() {
           setIsNavExpanded(!isNavExpanded);
         }}
       >
-        {/* icon from Heroicons.com */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -42,40 +42,41 @@ export default function Navbar() {
       >
         <ul>
           <li>
-            <a href="/home">
+            <Link activeClass="active" to="home" spy={true} smooth={true}>
               {"<"}
               <span style={{ color: "#FEB139", fontFamily: "monospace" }}>
                 Home
               </span>
               {"/>"}
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about">
+            <Link to="about" spy={true} smooth={true}>
               {"<"}
               <span style={{ color: "#FEB139", fontFamily: "monospace" }}>
                 About
               </span>
               {"/>"}
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/home">
+            <Link to="projects" spy={true} smooth={true}>
               {"<"}
               <span style={{ color: "#FEB139", fontFamily: "monospace" }}>
                 Projects
               </span>
               {"/>"}
-            </a>
+              {/* </a> */}
+            </Link>
           </li>
           <li>
-            <a href="/contact">
+            <Link to="contact" spy={true} smooth={true}>
               {"<"}
               <span style={{ color: "#FEB139", fontFamily: "monospace" }}>
                 Contact
               </span>
               {"/>"}
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

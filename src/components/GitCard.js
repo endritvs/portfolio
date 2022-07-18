@@ -4,17 +4,6 @@ import { AiFillGithub } from "react-icons/ai";
 const GitCard = (props) => {
   const { repos } = props;
 
-  const listRepos =
-    repos.length !== 0 ? (
-      repos.data.map((item) => (
-        <div className="card-project">
-          <h3 key={item.id}>{item.name}</h3>
-        </div>
-      ))
-    ) : (
-      <li>No repos found!</li>
-    );
-
   return (
     <div>
       <div className="cards">
